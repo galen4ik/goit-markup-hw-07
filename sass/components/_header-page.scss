@@ -1,0 +1,19 @@
+.header-page {
+  padding-top: 24px;
+  padding-bottom: 25px;
+
+  background-color: $primary-bg;
+  border-bottom: 1px solid $border-color;
+
+  .container {
+    @extend %container;
+
+    display: flex;
+    align-items: center;
+  }
+
+  .site-nav {
+    display: flex;
+    align-items: center;
+  }
+}

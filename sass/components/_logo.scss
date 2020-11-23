@@ -1,0 +1,16 @@
+.nav-logo {
+  @extend %link;
+  display: inline-block;
+
+  color: $accent-color;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  list-style: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  .logo-studio {
+    color: $primary-text-color;
+  }
+}

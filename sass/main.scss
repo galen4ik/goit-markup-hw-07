@@ -1,1 +1,8 @@
-@import "./vars";
+@import "./utils/vars";
+@import "./utils/placeholders";
+
+@import "./components/body";
+@import "./components/header-page";
+@import "./components/logo";
+@import "./components/site-nav";
+@import "./components/info-contacts";

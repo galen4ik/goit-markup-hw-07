@@ -1,0 +1,48 @@
+.nav-list {
+  @extend %list;
+  display: flex;
+  margin-left: 93px;
+
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-link {
+  @extend %link;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: $primary-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.current {
+  @extend %link;
+  position: relative;
+  color: $accent-color;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 4px;
+    content: " ";
+    display: block;
+
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+}
