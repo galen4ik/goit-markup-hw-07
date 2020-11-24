@@ -1,0 +1,12 @@
+.checkbox {
+  @extend %visually-hidden;
+
+  &:checked + .checkbox-label::before {
+    background-image: url(../img/icon-check.svg);
+    background-color: $accent-color;
+    border-color: $accent-color;
+    background-position: center;
+    background-origin: border-box;
+    background-size: contain;
+  }
+}

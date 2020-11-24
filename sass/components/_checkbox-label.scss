@@ -1,0 +1,25 @@
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $light-text-color;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $primary-text-color;
+    border-radius: 2px;
+    margin-right: 8px;
+    transition: background-color 250ms $timing-function,
+      border-color 250ms $timing-function;
+  }
+  .checkbox-link {
+    @extend %link;
+    color: $accent-color;
+  }
+}

@@ -1,0 +1,20 @@
+.btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+.icon-close {
+  display: block;
+  transition: fill 250ms $timing-function;
+
+  .btn-close:hover &,
+  .btn-close:focus & {
+    fill: $accent-color;
+  }
+}

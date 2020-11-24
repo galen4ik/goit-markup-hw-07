@@ -1,0 +1,38 @@
+.form {
+  text-align: center;
+
+  .form-title {
+    @extend %form-title;
+  }
+
+  .form-list {
+    @extend %list;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .form-item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .form-field {
+    @extend %form-field;
+  }
+
+  .field-title {
+    @extend %field-title;
+  }
+}
+
+.input-form {
+  @extend %input-form;
+}
+
+.icon-form {
+  @extend %icon-form;
+
+  .input-form:hover + &,
+  .input-form:focus + & {
+    fill: $accent-color;
+  }
+}
