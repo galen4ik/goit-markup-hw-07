@@ -489,7 +489,7 @@ img {
 
 /* details */
 
-.details {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--white);
@@ -506,13 +506,17 @@ img {
   overflow: hidden;
 }
 
-.details-ul {
+.features-list {
   display: flex;
   margin: 0;
   padding: 0;
 }
 
-.details-title {
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.features-title {
   margin: 0;
   margin-bottom: 10px;
   width: 270px;
@@ -526,11 +530,7 @@ img {
   text-transform: uppercase;
 }
 
-.details-ul .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.details-text {
+.features-text {
   margin: 0;
 
   color: var(--text-color-p);
