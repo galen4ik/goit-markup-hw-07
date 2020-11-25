@@ -1,4 +1,4 @@
-.nav-list, .info-list, .form .form-list, .features-list, .occupation-pics, .team-list, .social-list {
+.nav-list, .info-list, .form .form-list, .features-list, .occupation-pics, .team-list, .social-list, .client-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -40,7 +40,7 @@ img, .team-card img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.features, .team {
+.features, .team, .clients {
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -649,5 +649,60 @@ body {
   margin: 0;
   padding: 0;
   fill: #afb1b8;
+}
+
+.client-title {
+  margin-bottom: 50px;
+  margin-top: 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.client-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.client-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.client-list .icon {
+  margin: 0;
+  padding: 0;
+  fill: #afb1b8;
+}
+
+.client-list .client-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client-list .client-link:hover, .client-list .client-link:focus {
+  fill: #2196f3;
+  border-color: #2196f3;
 }
 /*# sourceMappingURL=main.css.map */

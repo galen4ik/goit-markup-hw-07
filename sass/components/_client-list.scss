@@ -1,0 +1,34 @@
+.client-list {
+  @extend %list;
+  display: flex;
+  justify-content: center;
+
+  .item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .icon {
+    margin: 0;
+    padding: 0;
+    fill: $icon-fill-color;
+  }
+
+  .client-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon-fill-color;
+    border-radius: 4px;
+    fill: $icon-fill-color;
+
+    transition: 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      border-color: $accent-color;
+    }
+  }
+}
