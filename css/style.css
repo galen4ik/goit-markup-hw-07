@@ -960,6 +960,8 @@ img {
   color: var(--blue);
 }
 
+/* Footer-social */
+
 .footer-social {
   margin-right: 93px;
 }
@@ -996,11 +998,7 @@ img {
   background-color: var(--blue);
 }
 
-.subs-div {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-}
+/* footer-form */
 
 .subs-title {
   display: inline-block;
@@ -1011,6 +1009,12 @@ img {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.subs-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
 }
 
 .input-subscribe {

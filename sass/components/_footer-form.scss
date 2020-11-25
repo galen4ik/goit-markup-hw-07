@@ -1,0 +1,66 @@
+.subs-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $primary-bg;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.subs-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+
+  .input-subscribe {
+    display: inline-block;
+    min-width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    margin-right: 12px;
+
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  .btn-subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $accent-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $primary-bg;
+
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+      background-color: $primary-bg;
+    }
+  }
+
+  .btn-icon {
+    margin-left: 10px;
+    fill: currentColor;
+  }
+}

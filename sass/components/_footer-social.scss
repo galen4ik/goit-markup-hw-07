@@ -1,0 +1,36 @@
+.footer-social {
+  margin-right: 93px;
+
+  .footer-social-title {
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding: 0;
+
+    color: $primary-bg;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: $primary-bg;
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition: background-color 250ms $timing-function,
+      color 250ms $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+    }
+  }
+}

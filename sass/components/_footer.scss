@@ -1,0 +1,12 @@
+.footer {
+  height: 252px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $dark-bg;
+
+  .container {
+    @extend %container;
+    display: flex;
+    align-items: baseline;
+  }
+}
