@@ -1,4 +1,4 @@
-.nav-list, .info-list, .form .form-list, .features-list, .occupation-pics, .team-list, .social-list, .client-list, .address-footer .footer-list {
+.nav-list, .info-list, .form .form-list, .features-list, .occupation-pics, .team-list, .social-list, .client-list, .address-footer .footer-list, .footer-social .social-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -519,7 +519,6 @@ body {
 
 .occupation {
   padding-bottom: 94px;
-  background-color: var(--white);
 }
 
 .occupation-title {

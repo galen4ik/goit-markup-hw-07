@@ -1,0 +1,30 @@
+.offer-list {
+  @extend %list;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+
+  .offer-card {
+    width: 370px;
+    margin: 15px;
+    background-color: $primary-bg;
+    box-sizing: border-box;
+
+    transition: 250ms $timing-function;
+
+    &:hover,
+    &:focus-within {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+
+  & .link:hover .offer-overlay,
+  & .link:focus .offer-overlay {
+    transform: translateY(0);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & .link {
+    @extend %link;
+  }
+}

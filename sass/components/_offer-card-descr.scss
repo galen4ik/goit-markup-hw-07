@@ -1,0 +1,27 @@
+.card-description {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+
+  .offer-title {
+    margin: 0;
+    margin-bottom: 4px;
+    color: $primary-text-color;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+  }
+
+  .offer-text {
+    color: $light-text-color;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.8;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+}

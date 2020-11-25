@@ -1,6 +1,10 @@
 .footer-social {
   margin-right: 93px;
 
+  .social-list {
+    @extend %list;
+  }
+
   .footer-social-title {
     margin-bottom: 20px;
     margin-top: 0;
