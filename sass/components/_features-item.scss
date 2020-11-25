@@ -1,5 +1,48 @@
 .features-list {
   display: flex;
-  margin: 0;
-  padding: 0;
+  flex-wrap: wrap;
+  @extend %list;
+
+  .features-item {
+    width: 270px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  .features-title {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 270px;
+    height: 16px;
+
+    color: $primary-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .features-text {
+    margin: 0;
+
+    color: $light-text-color;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+    height: 75px;
+  }
+}
+
+.icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: $bcg-team-color;
 }

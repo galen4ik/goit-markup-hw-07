@@ -1,6 +1,7 @@
 .hero {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
 
@@ -23,7 +24,7 @@
   background-position: center;
 
   .hero-title {
-    width: 696px;
+    margin-top: 0;
     margin-bottom: 30px;
 
     color: $primary-bg;
@@ -33,5 +34,13 @@
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
+  }
+  .btn {
+    @extend %btn;
+
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
   }
 }

@@ -1,9 +1,10 @@
 .features {
   @extend %section;
 }
-.visually-hidden {
-  @extend %visually-hidden;
-}
 .container {
   @extend %container;
+}
+
+.visually-hidden {
+  @extend %visually-hidden;
 }
