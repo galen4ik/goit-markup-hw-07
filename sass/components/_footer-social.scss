@@ -36,5 +36,9 @@
     &:focus {
       background-color: $accent-color;
     }
+    .icon {
+      @extend %icon;
+      color: $primary-bg;
+    }
   }
 }

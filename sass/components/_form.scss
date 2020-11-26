@@ -3,6 +3,7 @@
 
   .form-title {
     @extend %form-title;
+    margin-top: 0;
   }
 
   .form-list {
@@ -13,26 +14,5 @@
 
   .form-item:not(:last-child) {
     margin-bottom: 10px;
-  }
-
-  .form-field {
-    @extend %form-field;
-  }
-
-  .field-title {
-    @extend %field-title;
-  }
-}
-
-.input-form {
-  @extend %input-form;
-}
-
-.icon-form {
-  @extend %icon-form;
-
-  .input-form:hover + &,
-  .input-form:focus + & {
-    fill: $accent-color;
   }
 }
